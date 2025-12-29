@@ -1,3 +1,7 @@
+#pragma once
+#include <string>
+#include "kv/result.hpp"
+
 namespace kv {
 
 enum class LogLevel {
@@ -15,3 +19,5 @@ struct Config {
 };
 
 Result<Config> load_config(const std::string& path);
+
+}

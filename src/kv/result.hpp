@@ -1,6 +1,6 @@
 #pragma once
 
-#include "error.hpp"
+#include "kv/error.hpp"
 #include <tl/expected.hpp>
 
 namespace kv {

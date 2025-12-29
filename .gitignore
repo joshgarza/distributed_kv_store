@@ -1,0 +1,11 @@
+# Build artifacts
+build/
+out/
+cmake-build-*/
+
+# Temporary files
+scratch
+scratch.cpp
+
+# Sanitizer output
+*.profraw

@@ -1,5 +1,4 @@
 #include "kv/config.hpp"
-#include <iostream>
 
 namespace kv {
 

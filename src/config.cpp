@@ -1,10 +1,11 @@
-#include "kv/result.hpp"
-#include <tl/expected.hpp>
+#include "kv/config.hpp"
+#include <iostream>
 
 namespace kv {
 
 Result<Config> load_config(const std::string& path) {
-	Code code = Code::InvalidArgument;
+	(void)path; // explicitly unused for now
+	return tl::unexpected(make_error(Code::InvalidArgument, "Must provide a valid path"));
+}
 
-	return tl::unexpected(make_error(code, "Must provide a valid path"));
 } // namespace kv

@@ -9,3 +9,6 @@ scratch.cpp
 
 # Sanitizer output
 *.profraw
+
+# Ignore swap files
+.*

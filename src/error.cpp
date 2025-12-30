@@ -3,7 +3,7 @@
 namespace kv {
 
 Error make_error(Code code, std::string message) {
-	return new Error{code, std::move message};
+	return Error{code, std::move(message)};
 }
 
 } // namespace kv
